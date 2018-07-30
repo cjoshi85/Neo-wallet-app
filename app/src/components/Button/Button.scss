@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.button {
+    padding: 6px 12px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 1em;
+    color: #fff;
+    background-color: #455962;
+    cursor: pointer;
+    margin: 13px 170px 0 170px;
+
+    + .button, + a .button {
+        margin-left: 10px;
+    }
+
+    &.primary {
+        background-color: #455962;
+        border-color: #455962;
+        &:hover:not([disabled]) {
+            background-color: #455962;
+            border-color: #455962;
+        }
+    }
+
+    &.secondary {
+        background-color: #455962;
+        border-color: $dark-button;
+        &:hover:not([disabled]) {
+            background-color: #455962;
+            border-color: #455962;
+        }
+    }
+
+    &.cancel {
+        background-color: transparent;
+        border-color: #999;
+        color: #000;
+        &:hover:not([disabled]) {
+            background-color: transparent;
+            border-color: #999;
+        }
+    }
+
+    &[disabled] {
+        opacity: .6;
+        cursor: default;
+    }
+}

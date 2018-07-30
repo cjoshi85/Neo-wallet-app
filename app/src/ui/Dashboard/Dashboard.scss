@@ -1,0 +1,116 @@
+@import '../../styles/variables';
+
+.container {
+  height: 100%;
+  padding-top: 10px;
+}
+
+.walletButtons {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.address {
+  color: $link-color;
+  cursor: pointer;
+}
+
+.canvas {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.walletButton,
+.icoButton {
+  width: 50%;
+  padding: 9px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 200;
+  background-color: #455962;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: #455962;
+  }
+}
+
+.sendButton {
+  margin-right: 10px;
+}
+
+.icoButton {
+  margin-left: 10px;
+}
+
+.walletButtonText {
+  padding-left: 5px;
+}
+
+.walletButtonIcon {
+  font-size: 1.1em;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+}
+
+.contentBox {
+  width: 50%;
+}
+
+.transactionHistory {
+  border-left: 1.5px solid #efefef;
+  position: relative;
+  color: #fff;
+}
+
+.buttonContainer {
+  text-align: center;
+  width: 100%;
+  padding: 16px 0px;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.sendDisabled {
+  opacity: 0.5;
+  cursor: default;
+  &:hover {
+    background-color: $default-button;
+  }
+}
+
+.modalHeader {
+  flex: 0 0 auto;
+  display: flex;
+  height: 45px;
+  padding: 0px 24px;
+  border-bottom: 1px solid #DAE1E9;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalHeaderTitle {
+  font-size: 18px;
+}
+
+.modalHeaderCloseButton {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  fill: #9BA6B2;
+  cursor: pointer;
+}
+
+.modalBody {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  overflow-y: auto;
+}

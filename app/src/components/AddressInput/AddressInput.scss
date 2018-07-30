@@ -1,0 +1,15 @@
+.addressInput {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+  
+    .cleave {
+      flex: 1 1 auto;
+      width: 100%;
+    }
+  
+    .maxButton {
+      flex: 0 0 auto;
+    }
+  }
+  

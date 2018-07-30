@@ -1,0 +1,16 @@
+@import '../styles/variables';
+
+.container{
+    flex: 1;
+}
+.inputBox {
+    padding-left: 10;
+    height: 36;
+    font-size: 14;
+    background-color: '#E8F4E5';
+    color: '#333333';
+}
+
+.loginForm {
+    margin-top: 5;
+}

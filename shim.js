@@ -20,3 +20,14 @@ process.env['NODE_ENV'] = isDev ? 'development' : 'production'
 if (typeof localStorage !== 'undefined') {
   localStorage.debug = isDev ? '*' : ''
 }
+// if (!Uint8Array.prototype.slice) {
+//   Uint8Array.prototype.slice = function () {
+//     var args = Array.prototype.slice.call(arguments);
+//     return new Uint8Array(Array.prototype.slice.apply(this, args));
+//   }
+// }
+if (!Uint8Array.prototype.slice) {
+  Uint8Array.prototype.slice = function slice (start, end) {
+    return new Uint8Array(Array.prototype.slice.call(this, start, end))
+  }
+}

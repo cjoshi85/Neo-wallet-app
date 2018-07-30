@@ -1,0 +1,238 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import '../../styles/variables';
+
+body {
+  font-family: 'Open Sans', 'sans-serif';
+}
+.mega-dropdown {
+  position: static !important;
+}
+
+
+.mega-dropdown-menu {
+    padding: 20px 0px;
+    width: 100%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  color: #222;
+  padding: 3px 5px;
+}
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+}
+.mega-dropdown-menu .dropdown-header {
+  font-size: 18px;
+  color: #ff3546;
+  padding: 5px 60px 5px 5px;
+  line-height: 30px;
+}
+
+.carousel-control {
+  width: 30px;
+  height: 30px;
+  top: -35px;
+
+}
+.left.carousel-control {
+  right: 30px;
+  left: inherit;
+}
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right {
+  font-size: 12px;
+  background-color: #fff;
+  line-height: 30px;
+  text-shadow: none;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.navBarItemLabel {
+  color: #999;
+  margin-right: 4px;
+}
+
+.dropdown{
+  cursor: pointer;
+  color: rgb(69, 89, 98);
+  &.active,
+  &:active {
+    background-color:#fff;
+    text-decoration: none;
+    
+  }
+}
+
+.dropdown_menu{
+  background-color: #fff;
+  padding:1px
+}
+
+.walletButton,
+.icoButton {
+  width: 100%;
+  padding: 9px;
+  color: #fff;
+  /* font-size: 1.2em; */
+  font-weight: 200;
+  background-color: #455962;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-left: 35%;
+  padding: 11px;
+  
+  &:hover {
+    background-color: #455962;
+  }
+}
+
+
+
+.sendButton {
+  margin-right: 10px;
+}
+
+.modalHeader {
+  flex: 0 0 auto;
+  display: flex;
+  height: 45px;
+  padding: 0px 24px;
+  border-bottom: 1px solid #DAE1E9;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.modalHeaderTitle {
+  font-size: 18px;
+}
+
+.modalHeaderCloseButton {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  fill: #9BA6B2;
+  cursor: pointer;
+}
+
+.modalBody {
+  flex: 1 1 auto;
+  display: flex;
+  // flex-direction: column;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+
+
+.scrollable
+{
+  height: auto;
+  max-height: 200px;
+  overflow-x: hidden;
+  color: #222;
+  position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
+    transform: translate3d(0px, 58px, 0px);
+    width: 100%;
+    padding: 0 0 0 10px;
+}
+
+.currencies{
+  width: 100%;
+  padding: 9px;
+  color: #fff;
+  /* font-size: 1.2em; */
+  font-weight: 200;
+  background-color: #455962;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35%;
+  margin-top:10px; 
+}
+
+.list{
+  cursor: pointer;
+}
+
+.addRecipientDisplay {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+
+  .inputs {
+      flex: 1 0 auto;
+  }
+
+  .actions {
+      flex: 0 0 auto;
+  }
+}
+
+.inputs {
+  .row {
+      display: flex;
+      flex-direction: row;
+
+      .column {
+          margin-right: 10px;
+
+          &:last-child {
+              margin-right: 0;
+          }
+      }
+
+      .label {
+          display: block;
+          padding: 10px 0;
+      }
+
+      .sendToIcon {
+          align-self: center;
+      }
+
+      .recipient {
+          flex: 1 0 auto;
+      }
+  }
+}
+
+.actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.numberInput {
+  flex-direction: row;
+  width: 400px;
+  text-align: center;
+  margin-top: 11px;
+}
+
+  .cleave {
+    flex: 1 1 auto;
+    width: 100%;
+  }
